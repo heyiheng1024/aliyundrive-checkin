@@ -32,10 +32,10 @@ jobs:
         run: |
           python3 ./main.py --token_string "${{ secrets.TOKEN }}"
         env:
-          PUSHPLUS_TOKEN: ${{ secrets.5f0760dbc83c4eb8a6965b9677fc4b97 }}
+          PUSHPLUS_TOKEN: 5f0760dbc83c4eb8a6965b9677fc4b97
           SERVERCHAN_SENDKEY: ${{ secrets.SCKEY }}
           WECOM_TOKENS: ${{ secrets.WECOM_TOKENS }}
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
-          BARK_DEVICEKEY: ${{ secrets.a2HM5YGTbsKoxfQwp4V7xb }}
+          BARK_DEVICEKEY: a2HM5YGTbsKoxfQwp4V7xb
           FEISHU_DEVICEKEY: ${{ secrets.FEISHU_DEVICEKEY }}
       - uses: gautamkrishnar/keepalive-workflow@master
