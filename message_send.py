@@ -152,8 +152,10 @@ class MessageSend:
             "body": content,
             "device_key": device_key
         }
-
-        resp = requests.post(url, headers=headers, data=json.dumps(data))
+        params = {}
+        params['group'] = '阿里网盘'
+        params['icon'] = 'https://ooo.0x0.ooo/2024/04/02/OmUPwb.png'
+        resp = requests.post(url, headers=headers, data=json.dumps(data), params=params)
         resp_json = resp.json()
         if resp_json["code"] == 200:
             print(f"[Bark]Send message to Bark successfully.")
