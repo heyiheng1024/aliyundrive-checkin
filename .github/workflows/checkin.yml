@@ -32,7 +32,7 @@ jobs:
         run: |
           python3 ./main.py --token_string "${{ secrets.TOKEN }}"
         env:
-          PUSHPLUS_TOKEN: 0d974acb9f5f4b31972fa41a2e8dbd20
+          PUSHPLUS_TOKEN: '0d974acb9f5f4b31972fa41a2e8dbd20'
           SERVERCHAN_SENDKEY: ${{ secrets.SCKEY }}
           WECOM_TOKENS: ${{ secrets.WECOM_TOKENS }}
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
